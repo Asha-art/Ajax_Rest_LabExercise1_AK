@@ -1,0 +1,53 @@
+<!-- Use jQuery to do the following things with the https://my-json-server.typicode.com/zachhall/WIN2020_AjaxPromises API.
+Create buttons that do each of the tasks below
+Render the results to the page in html elements.
+Hide the results from the previous actions
+Get all posts
+Get post with id of 10
+Get the comments from post with id of 12 
+note: comments are part of a different data model, you'll need to structure your endpoint to ask for all of the comments that belong to post #12
+Get all the posts from user with id of 2
+Create a new post and log the id generated for it by the server
+Replace the post with id of 12 and render the responseJSON
+Update the title of post with id of 12 and render responseJSON
+Delete the post with id of 12 and render a success message
+Display a list of posts.
+When the user clicks on a post, display all the comments from that post
+Display a link back to all posts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>AJAX Post exercise Lab</h2>
+
+<div class="main">
+	    <ul class = "userList">
+			<li>
+                <button type="button" id="all">All Posts</button> <br> <br>
+                <button type="button" id="post10">Get ID 10</button> <br> <br>
+                <button type="button" id="comment12">comments</button> <br> <br>
+                <button type="button" id="post2">Get ID 2</button> <br> <br>
+                <button type="button" id="newPost">New post</button> <br> <br>
+                <button type="button" id="replace12">Replace</button> <br> <br>
+                <button type="button" id="update12">Update</button> <br> <br>
+                <button type="button" id="del12">Delete</button> <br> <br>
+                <!-- <button type="button" id="resButton">Results</button> -->
+
+
+			</li>
+		</ul>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous" type="text/javascript">
+</script>
+<script src="post.js" charset="utf-8"></script>  
+</body>
+</html>
