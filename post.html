@@ -4,13 +4,13 @@ Render the results to the page in html elements.
 Hide the results from the previous actions
 Get all posts
 Get post with id of 10
-Get the comments from post with id of 12 
-note: comments are part of a different data model, you'll need to structure your endpoint to ask for all of the comments that belong to post #12
+Get the comments from post with id of 14
+note: comments are part of a different data model, you'll need to structure your endpoint to ask for all of the comments that belong to post #14
 Get all the posts from user with id of 2
 Create a new post and log the id generated for it by the server
-Replace the post with id of 12 and render the responseJSON
-Update the title of post with id of 12 and render responseJSON
-Delete the post with id of 12 and render a success message
+Replace the post with id of 14vand render the responseJSON
+Update the title of post with id of 14 and render responseJSON
+Delete the post with id of 14 and render a success message
 Display a list of posts.
 When the user clicks on a post, display all the comments from that post
 Display a link back to all posts -->
@@ -30,13 +30,16 @@ Display a link back to all posts -->
 			<li>
                 <button type="button" id="all">All Posts</button> <br> <br>
                 <button type="button" id="post10">Get ID 10</button> <br> <br>
-                <button type="button" id="comment12">comments</button> <br> <br>
+                <button type="button" id="comment14">comments</button> <br> <br>
                 <button type="button" id="post2">Get ID 2</button> <br> <br>
                 <button type="button" id="newPost">New post</button> <br> <br>
-                <button type="button" id="replace12">Replace</button> <br> <br>
-                <button type="button" id="update12">Update</button> <br> <br>
-                <button type="button" id="del12">Delete</button> <br> <br>
-                <!-- <button type="button" id="resButton">Results</button> -->
+                <button type="button" id="replace14">Replace</button> <br> <br>
+                <button type="button" id="update14">Update</button> <br> <br>
+                <button type="button" id="delete14">Delete</button> <br> <br>
+                <button type="button" id="displayAll">Display all posts</button> <br> <br>
+                <button type="button" id="commentPost">Comments from post clicked</button> <br> <br>
+                <button type="button" id="linkPost">Link for posts</button> <br> <br>
+               
 
 
 			</li>
