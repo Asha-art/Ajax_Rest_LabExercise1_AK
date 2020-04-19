@@ -75,18 +75,26 @@ $('#replace14').click(function(){
 	$.ajax({
 		method: 'PUT',
 		url: 'https://my-json-server.typicode.com/zachhall/WIN2020_AjaxPromises/posts/14',
-		data: { title: "post replaced"},
-		 function(response){
-			console.log(response.responseJSON);//handle response which usually includes the updated object.
-		}
-	},
-	function(result){
-		console.log(result);
+		data: {
+			 userId:1,
+			 title: "post replaced",
+			 body: "New post added"
+
+			},
+		 complete:function(response){
 			var li = $('<li></li>');
-			li.text(JSON.stringify(result));
+			//console.log(response.responseJSON);//handle response which usually includes the updated object.
+			li.text(JSON.stringify(response));
 			$('body').append(li);
-		})
-  })
+		}
+	})
+	// function(result){
+	// 	console.log(result);
+	// 		var li = $('<li></li>');
+	// 		li.text(JSON.stringify(result));
+	// 		$('body').append(li);
+	// 	})
+  });
 
 
 //Update the title of post 
@@ -106,20 +114,25 @@ $('#update14').click(function(){
 		})
   
 // Delete the post with id 14 ...Remove the object
-$('#update14').click(function(){
+$('#delete14').click(function(){
 $.ajax({
+
 	method: 'DELETE',
 	url: 'https://my-json-server.typicode.com/zachhall/WIN2020_AjaxPromises/posts/14',
-	complete: function(response){
-		console.log(response.responseJSON);
-		}
-	},function(result){
-		console.log(result);
-		var li = $('<li></li>');
-		li.text(JSON.stringify(result));
-		$('body').append(li);
-	})
-})
+		complete: function(response){
+			//console.log(response.responseJSON);
+			var li = $('<li></li>');
+			li.text(JSON.stringify(response));
+			$('body').append(li);
+			}
+	
+	// function(result){
+	// 	console.log(result);
+		
+		})
+	});
+
+
 
 
 // display a list of posts
